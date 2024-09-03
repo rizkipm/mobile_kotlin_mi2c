@@ -20,7 +20,7 @@
             android:layout_marginTop="50sp"
             android:gravity="center"
             android:padding="30sp"
-            android:text="Selamat Datang di Aplikasi Mobile Mi 2C"
+            android:text="Selamat Datang di Aplikasi Mobile Mi 2A"
             android:textAlignment="center"
             android:textColor="#E91E63"
             android:textSize="24sp"
@@ -39,5 +39,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Menu Page Kedua" />
+
+        <Button
+            android:id="@+id/btnKalkulatorSederhana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator Sederhana" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
