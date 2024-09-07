@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     private  lateinit var btnClick : Button
     private lateinit var btnPageKedua : Button
     private lateinit var btnKalkulator : Button
+    private lateinit var btnPassingData : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         btnClick = findViewById(R.id.btnClickHere)
         btnPageKedua = findViewById(R.id.btnPageKedua)
         btnKalkulator = findViewById(R.id.btnKalkulatorSederhana)
+        btnPassingData = findViewById(R.id.btnPassingData)
 
         //untuk 1 screen --> terdiri dari 1 activity dan 1 xml layout
         //untuk bisa widget kita pakai, kita deklarasi dlu
@@ -50,6 +52,14 @@ class MainActivity : AppCompatActivity() {
             //inten implicit : intent kita buat sendiri dan yang belaku didalam project
             //intent expilicit : kita memanggil pihak ketiga / third party / libray : gmaps, gps,
             val intentMenu2 = Intent(this@MainActivity, KalkulatoSederhanaActivity::class.java)
+            startActivity(intentMenu2)
+        }
+        btnPassingData.setOnClickListener(){
+            //untuk pindah page : intent
+            //intent 2 : intent implicit dan intent explicit
+            //inten implicit : intent kita buat sendiri dan yang belaku didalam project
+            //intent expilicit : kita memanggil pihak ketiga / third party / libray : gmaps, gps,
+            val intentMenu2 = Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(intentMenu2)
         }
     }
