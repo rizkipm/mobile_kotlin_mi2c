@@ -99,6 +99,14 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
         }
 
             /**
+             * Creates a dependency provider for cardview (androidx.cardview:cardview)
+             * This dependency was declared in catalog libs.versions.toml
+             */
+            public Provider<MinimalExternalModuleDependency> getCardview() {
+                return create("androidx.cardview");
+        }
+
+            /**
              * Creates a dependency provider for constraintlayout (androidx.constraintlayout:constraintlayout)
              * This dependency was declared in catalog libs.versions.toml
              */
@@ -185,6 +193,14 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
              * This version was declared in catalog libs.versions.toml
              */
             public Provider<String> getAppcompat() { return getVersion("appcompat"); }
+
+            /**
+             * Returns the version associated to this alias: cardview (1.0.0)
+             * If the version is a rich version and that its not expressible as a
+             * single version string, then an empty string is returned.
+             * This version was declared in catalog libs.versions.toml
+             */
+            public Provider<String> getCardview() { return getVersion("cardview"); }
 
             /**
              * Returns the version associated to this alias: constraintlayout (2.1.4)

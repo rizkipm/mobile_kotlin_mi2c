@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Mobile App Mi2c</string>
+    <string name="st_anggur">Anggur adalah minuman beralkohol yang dibuat dari sari buah anggur yang difermentasi.
+
+Secara teknis, buah apa pun dapat digunakan untuk membuat anggur (misalnya, apel, cranberry, plum, dll.), tetapi jika hanya tertulis "anggur" pada labelnya, maka anggur tersebut dibuat dari anggur. Omong-omong, anggur anggur berbeda dengan anggur meja .</string>
+    <string name="st_jeruk">Tanaman jeruk adalah tanaman buah tahunan yang berasal dari Asia. Cina dipercaya sebagai tempat pertama kali jeruk tumbuh. Sejak ratusan tahun yang lalu, jeruk sudah tumbuh di Indonesia baik secara alami atau dibudidayakan. Tanaman jeruk yang ada di Indonesia adalah peninggalan orang Belanda yang mendatangkan jeruk manis dan keprok dari Amerika dan Itali. Kini jeruk sudah banyak ditanam di daerah tropis maupun subtropics. Jeruk manis biasanya ditanam di daerah 20-40 LU, dan 20-40 LS, sedangkan disekitar khatulistiwa dapat ditanam hingga ketinggian 2.000 dpl. Jeruk telah lama dikenal sebagai buah dengan rasa segar dan penuh vitamin. Selain kaya akan vitamin dan mineral, jeruk juga mengandung serat makanan yang esensial bagi pertumbuhan dan perkembangan tubuh normal.</string>
+    <string name="st_apel">Apel merupakan jenis buah-buahan, atau buah yang dihasilkan dari pohon apel. Buah apel biasanya berwarna merah kulitnya jika masak dan siap dimakan, tetapi bisa juga kulitnya berwarna hijau atau kuning. Kulit buahnya agak lembek dan daging buahnya keras. Buah apel memiliki beberapa biji di dalamnya.
+
+Orang pertama kali menanam apel di Asia Tengah. Saat ini, apel tumbuh di berbagai daerah di dunia dengan suhu udara yang lebih dingin. Nama ilmiah pohon apel dalam bahasa Latin ialah Malus domestica. Apel budi daya adalah keturunan dari Malus sieversii asal Asia Tengah, dengan sebagian genom dari Malus sylvestris (apel hutan/apel liar).</string>
+    <string name="st_pear">Apa itu Pear singo? Singo Pear adalah salah satu jenis yang masih kurang populer di telinga masyakarat. Meskipun begitu, Singo Pear ini memiliki kadar air yang tinggi dan manfaat-manfaat lainnya.Singo pear memiliki bentuk seperti Apel, berwarna cokelat, serta memiliki tekstur yang renyah.</string>
+
 </resources>

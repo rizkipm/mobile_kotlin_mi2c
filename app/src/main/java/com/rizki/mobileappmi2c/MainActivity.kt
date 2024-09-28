@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnPassingData : Button
     private lateinit var btnListView : Button
     private lateinit var btnRecycleview : Button
+    private lateinit var btnRecBuah : Button
+    private lateinit var btnMovie : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -27,6 +30,8 @@ class MainActivity : AppCompatActivity() {
         btnPassingData = findViewById(R.id.btnPassingData)
         btnListView = findViewById(R.id.btnListView)
         btnRecycleview = findViewById(R.id.btnRecycleView)
+        btnRecBuah = findViewById(R.id.btnRecycleBuah)
+        btnMovie = findViewById(R.id.btnRecycleMovie)
 
         //untuk 1 screen --> terdiri dari 1 activity dan 1 xml layout
         //untuk bisa widget kita pakai, kita deklarasi dlu
@@ -40,6 +45,22 @@ class MainActivity : AppCompatActivity() {
 
         btnClick.setOnClickListener(){
             Toast.makeText(this, "Anda klik button click here!", Toast.LENGTH_SHORT).show()
+        }
+        btnRecBuah.setOnClickListener(){
+            //untuk pindah page : intent
+            //intent 2 : intent implicit dan intent explicit
+            //inten implicit : intent kita buat sendiri dan yang belaku didalam project
+            //intent expilicit : kita memanggil pihak ketiga / third party / libray : gmaps, gps,
+            val intentMenu2 = Intent(this@MainActivity, RecycleBuahImageActivity::class.java)
+            startActivity(intentMenu2)
+        }
+        btnMovie.setOnClickListener(){
+            //untuk pindah page : intent
+            //intent 2 : intent implicit dan intent explicit
+            //inten implicit : intent kita buat sendiri dan yang belaku didalam project
+            //intent expilicit : kita memanggil pihak ketiga / third party / libray : gmaps, gps,
+            val intentMenu2 = Intent(this@MainActivity, MovieActivity::class.java)
+            startActivity(intentMenu2)
         }
 
         btnPageKedua.setOnClickListener(){

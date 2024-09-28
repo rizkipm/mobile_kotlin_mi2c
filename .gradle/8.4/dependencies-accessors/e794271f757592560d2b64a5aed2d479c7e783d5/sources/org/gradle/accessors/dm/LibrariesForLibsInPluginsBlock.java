@@ -121,6 +121,17 @@ public class LibrariesForLibsInPluginsBlock extends AbstractExternalDependencyFa
         }
 
             /**
+             * Creates a dependency provider for cardview (androidx.cardview:cardview)
+             * This dependency was declared in catalog libs.versions.toml
+         * @deprecated Will be removed in Gradle 9.0.
+             */
+        @Deprecated
+            public Provider<MinimalExternalModuleDependency> getCardview() {
+            org.gradle.internal.deprecation.DeprecationLogger.deprecateBehaviour("Accessing libraries or bundles from version catalogs in the plugins block.").withAdvice("Only use versions or plugins from catalogs in the plugins block.").willBeRemovedInGradle9().withUpgradeGuideSection(8, "kotlin_dsl_deprecated_catalogs_plugins_block").nagUser();
+                return create("androidx.cardview");
+        }
+
+            /**
              * Creates a dependency provider for constraintlayout (androidx.constraintlayout:constraintlayout)
              * This dependency was declared in catalog libs.versions.toml
          * @deprecated Will be removed in Gradle 9.0.
@@ -233,6 +244,14 @@ public class LibrariesForLibsInPluginsBlock extends AbstractExternalDependencyFa
              * This version was declared in catalog libs.versions.toml
              */
             public Provider<String> getAppcompat() { return getVersion("appcompat"); }
+
+            /**
+             * Returns the version associated to this alias: cardview (1.0.0)
+             * If the version is a rich version and that its not expressible as a
+             * single version string, then an empty string is returned.
+             * This version was declared in catalog libs.versions.toml
+             */
+            public Provider<String> getCardview() { return getVersion("cardview"); }
 
             /**
              * Returns the version associated to this alias: constraintlayout (2.1.4)

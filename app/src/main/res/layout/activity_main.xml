@@ -63,5 +63,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Recycle View" />
+
+        <Button
+            android:id="@+id/btnRecycleBuah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recycle Buah" />
+
+        <Button
+            android:id="@+id/btnRecycleMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recycle Movie" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
